@@ -1,0 +1,91 @@
+  
+/* FICHIER ANIMATION */
+
+/* ANIMATION DE LEFFET SUR LES MENUES PAGE MENU */
+
+@keyframes entrees {
+    0%{
+      transform: translateY (500px);
+        opacity: 0;
+    }
+    100%{
+      transform:transalteY (0);
+      opacity: 1;
+    }
+  }
+  
+  @keyframes plats{
+    0%{
+      transform: translateY (500px);
+        opacity: 0;
+    }
+    100%{
+      transform:transalteY (0);
+      opacity: 1;
+    }
+  }
+
+  @keyframes desserts {
+    0%{
+      transform: translateY (500px);
+        opacity: 0;
+    }
+    100%{
+      transform:transalteY (0);
+      opacity: 1;
+    }
+  }
+/* animation coeur a partir d'ici */
+@keyframes coeur {
+    0%{
+      transform: translateY (500px);
+      @include color-bouton-coeur;
+        opacity: 0;
+    }
+    100%{
+      transform:transalteY (0);
+      @include color-bouton-coeur;
+      opacity: 1;
+    }
+  }
+
+  /*animation du loader text*/
+  @keyframes tourne {
+  
+    0%{
+
+      transform: rotate(0deg);
+      
+    }
+    100%{
+
+     transform: rotate(360deg);
+     
+    }
+/*animation du loader contour qui tourne*/
+  }
+  @keyframes load {
+    0%{
+      transform: translateY (500px);
+        opacity: 1;
+    }
+    100%{
+      transform:transalteY (0);
+      opacity: 0;
+      display: none;
+    }
+  }
+  /*animation du loader fond*/
+  @keyframes fond-load {
+    0%{
+   opacity: 1;
+    }
+
+    60%{
+      opacity: 1;
+    }
+    100%{
+    opacity: 0;
+    z-index: -1;
+    }
+  }

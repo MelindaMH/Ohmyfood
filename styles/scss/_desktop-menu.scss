@@ -1,0 +1,72 @@
+
+@import "variables";
+@import "mixin";
+@import "anim";
+@import "logo-coeur";
+@import "footer";
+
+
+
+@media screen and  (min-width:1024px) {
+
+    .logo-ohmyfood 
+    {
+        width: 250px;
+      
+    }
+    .bloc-plats
+    {
+        width: 50%;
+        margin-left: 25%;
+        
+    }
+    .titre-bloc-plats
+    {
+        margin-left: 25%;
+    }
+    .titre-bloc-container h1
+    {
+        margin-left: 25%;
+        font-size: 40px;
+    }
+    .logo-coeur
+    {
+        margin-left: 65%;
+        font-size: 35px;
+        bottom: 15px;
+    }
+    .coeur-vide
+    {
+        
+        right: 0.5px;
+        top: -0.5px
+    }
+    html 
+    {
+        margin-left: 2%;
+        margin-right: 2%;
+    }
+    .photo-bann img
+    {
+        border-radius: 15px;
+    }
+    
+    footer 
+    {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    p
+    {
+        font-size: 20px;
+        margin-right: 5%;
+        margin-bottom: 0px;
+    }
+    ul 
+    {
+        margin-right: 5%;
+        font-size: 18px;
+    }
+    }
+    
+}

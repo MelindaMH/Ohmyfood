@@ -1,7 +1,12 @@
 .logo-coeur
     {
-            @include logocoeur;
-            margin-left: 280px;
+        font-size: 25px;
+        color: rgb(209, 208, 208);
+        position: absolute;
+        top: 85%;
+        right: 20px;
+        transform: translateY(-50%);
+        cursor: pointer;
         .coeur-plein
         {
             color: rgb(209, 208, 208);
@@ -12,8 +17,8 @@
             margin-left: -25px;
             margin-top: 2px;
             color: transparent;
-            &:hover{
-                animation: coeur 2s; 
-            }
+        }
+        &:focus .coeur-vide{
+            animation: coeur 2s; 
         }
     }

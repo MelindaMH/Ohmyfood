@@ -91,9 +91,10 @@
   font-size: 25px;
   color: #d1d0d0;
   position: absolute;
-  margin-top: -45px;
+  top: 85%;
+  right: 20px;
+  transform: translateY(-50%);
   cursor: pointer;
-  margin-left: 280px;
 }
 .logo-coeur .coeur-plein {
   color: #d1d0d0;
@@ -104,7 +105,7 @@
   margin-top: 2px;
   color: transparent;
 }
-.logo-coeur .coeur-vide:hover {
+.logo-coeur:focus .coeur-vide {
   animation: coeur 2s;
 }
 
@@ -195,9 +196,10 @@
   font-size: 25px;
   color: #d1d0d0;
   position: absolute;
-  margin-top: -45px;
+  top: 85%;
+  right: 20px;
+  transform: translateY(-50%);
   cursor: pointer;
-  margin-left: 280px;
 }
 .logo-coeur .coeur-plein {
   color: #d1d0d0;
@@ -208,7 +210,7 @@
   margin-top: 2px;
   color: transparent;
 }
-.logo-coeur .coeur-vide:hover {
+.logo-coeur:focus .coeur-vide {
   animation: coeur 2s;
 }
 
@@ -235,11 +237,6 @@ footer .a-bold {
 }
 
 @media screen and (min-width: 1024px) {
-  html {
-    margin-left: 2%;
-    margin-right: 2%;
-  }
-
   .bloc-fonctionnement {
     background: red;
     width: 380px;
@@ -435,7 +432,10 @@ header {
   width: 100%;
   height: 65px;
   display: flex;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
   justify-content: center;
+  position: relative;
+  z-index: 1;
   align-items: center;
 }
 header img {
@@ -498,7 +498,6 @@ header img {
   background-color: #F4F4F4;
   height: 74px;
   margin-left: 5%;
-  margin-right: 5%;
   margin-bottom: 20px;
   border-radius: 25px;
   font-size: 15px;
@@ -526,7 +525,6 @@ header img {
 
 .restaurants {
   background-color: #F4F4F4;
-  min-height: 1100px;
 }
 .restaurants h1 {
   padding-left: 20px;
@@ -538,8 +536,7 @@ header img {
   padding-right: 20px;
 }
 .liste-restau a {
-  width: 100%;
-  max-width: 700px;
+  max-width: 400px;
   margin-left: auto;
   margin-right: auto;
   position: relative;
@@ -552,9 +549,9 @@ header img {
   height: 30px;
   width: 80px;
   text-align: center;
-  position: relative;
-  top: 50px;
-  right: -100px;
+  position: absolute;
+  top: 20px;
+  right: 60px;
   margin: 0;
   line-height: 30px;
 }

@@ -6,27 +6,7 @@
 }
 /* FICHIER ANIMATION */
 /* ANIMATION DE LEFFET SUR LES MENUES PAGE MENU */
-@keyframes entrees {
-  0% {
-    transform: translateY 500px;
-    opacity: 0;
-  }
-  100% {
-    transform: transalteY 0;
-    opacity: 1;
-  }
-}
-@keyframes plats {
-  0% {
-    transform: translateY 500px;
-    opacity: 0;
-  }
-  100% {
-    transform: transalteY 0;
-    opacity: 1;
-  }
-}
-@keyframes desserts {
+@keyframes menu {
   0% {
     transform: translateY 500px;
     opacity: 0;
@@ -39,14 +19,12 @@
 /* animation coeur a partir d'ici */
 @keyframes coeur {
   0% {
-    transform: translateY 500px;
     background: -webkit-linear-gradient(180deg, #9356DC, #FF79DA);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     opacity: 0;
   }
   100% {
-    transform: transalteY 0;
     background: -webkit-linear-gradient(180deg, #9356DC, #FF79DA);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -65,13 +43,10 @@
 }
 @keyframes load {
   0% {
-    transform: translateY 500px;
     opacity: 1;
   }
   100% {
-    transform: transalteY 0;
     opacity: 0;
-    display: none;
   }
 }
 /*animation du loader fond*/
@@ -91,8 +66,6 @@
   font-size: 25px;
   color: #d1d0d0;
   position: absolute;
-  top: 85%;
-  right: 20px;
   transform: translateY(-50%);
   cursor: pointer;
 }
@@ -111,27 +84,7 @@
 
 /* FICHIER ANIMATION */
 /* ANIMATION DE LEFFET SUR LES MENUES PAGE MENU */
-@keyframes entrees {
-  0% {
-    transform: translateY 500px;
-    opacity: 0;
-  }
-  100% {
-    transform: transalteY 0;
-    opacity: 1;
-  }
-}
-@keyframes plats {
-  0% {
-    transform: translateY 500px;
-    opacity: 0;
-  }
-  100% {
-    transform: transalteY 0;
-    opacity: 1;
-  }
-}
-@keyframes desserts {
+@keyframes menu {
   0% {
     transform: translateY 500px;
     opacity: 0;
@@ -144,14 +97,12 @@
 /* animation coeur a partir d'ici */
 @keyframes coeur {
   0% {
-    transform: translateY 500px;
     background: -webkit-linear-gradient(180deg, #9356DC, #FF79DA);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     opacity: 0;
   }
   100% {
-    transform: transalteY 0;
     background: -webkit-linear-gradient(180deg, #9356DC, #FF79DA);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -170,13 +121,10 @@
 }
 @keyframes load {
   0% {
-    transform: translateY 500px;
     opacity: 1;
   }
   100% {
-    transform: transalteY 0;
     opacity: 0;
-    display: none;
   }
 }
 /*animation du loader fond*/
@@ -196,8 +144,6 @@
   font-size: 25px;
   color: #d1d0d0;
   position: absolute;
-  top: 85%;
-  right: 20px;
   transform: translateY(-50%);
   cursor: pointer;
 }
@@ -250,6 +196,10 @@ footer .a-bold {
     flex-direction: inherit;
   }
 
+  .logo-fonctionnement {
+    padding-left: 22px;
+  }
+
   .explorer {
     height: 240px;
   }
@@ -292,27 +242,7 @@ footer .a-bold {
 }
 /* FICHIER ANIMATION */
 /* ANIMATION DE LEFFET SUR LES MENUES PAGE MENU */
-@keyframes entrees {
-  0% {
-    transform: translateY 500px;
-    opacity: 0;
-  }
-  100% {
-    transform: transalteY 0;
-    opacity: 1;
-  }
-}
-@keyframes plats {
-  0% {
-    transform: translateY 500px;
-    opacity: 0;
-  }
-  100% {
-    transform: transalteY 0;
-    opacity: 1;
-  }
-}
-@keyframes desserts {
+@keyframes menu {
   0% {
     transform: translateY 500px;
     opacity: 0;
@@ -325,14 +255,12 @@ footer .a-bold {
 /* animation coeur a partir d'ici */
 @keyframes coeur {
   0% {
-    transform: translateY 500px;
     background: -webkit-linear-gradient(180deg, #9356DC, #FF79DA);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     opacity: 0;
   }
   100% {
-    transform: transalteY 0;
     background: -webkit-linear-gradient(180deg, #9356DC, #FF79DA);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -351,13 +279,10 @@ footer .a-bold {
 }
 @keyframes load {
   0% {
-    transform: translateY 500px;
     opacity: 1;
   }
   100% {
-    transform: transalteY 0;
     opacity: 0;
-    display: none;
   }
 }
 /*animation du loader fond*/
@@ -379,7 +304,7 @@ footer .a-bold {
   height: 100%;
   z-index: 1000;
   position: fixed;
-  animation: fond-load 3s both;
+  animation: fond-load 2s both;
 }
 
 .loading-visible {
@@ -594,6 +519,11 @@ a {
   border-radius: 20px 20px 0px 0px;
   box-shadow: 8px 10px 10px #d4d3d3;
   cursor: pointer;
+}
+
+.logo-coeur {
+  top: 85%;
+  right: 15%;
 }
 
 footer {

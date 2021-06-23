@@ -6,27 +6,7 @@
 }
 /* FICHIER ANIMATION */
 /* ANIMATION DE LEFFET SUR LES MENUES PAGE MENU */
-@keyframes entrees {
-  0% {
-    transform: translateY 500px;
-    opacity: 0;
-  }
-  100% {
-    transform: transalteY 0;
-    opacity: 1;
-  }
-}
-@keyframes plats {
-  0% {
-    transform: translateY 500px;
-    opacity: 0;
-  }
-  100% {
-    transform: transalteY 0;
-    opacity: 1;
-  }
-}
-@keyframes desserts {
+@keyframes menu {
   0% {
     transform: translateY 500px;
     opacity: 0;
@@ -39,14 +19,12 @@
 /* animation coeur a partir d'ici */
 @keyframes coeur {
   0% {
-    transform: translateY 500px;
     background: -webkit-linear-gradient(180deg, #9356DC, #FF79DA);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     opacity: 0;
   }
   100% {
-    transform: transalteY 0;
     background: -webkit-linear-gradient(180deg, #9356DC, #FF79DA);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -65,13 +43,10 @@
 }
 @keyframes load {
   0% {
-    transform: translateY 500px;
     opacity: 1;
   }
   100% {
-    transform: transalteY 0;
     opacity: 0;
-    display: none;
   }
 }
 /*animation du loader fond*/
@@ -91,8 +66,6 @@
   font-size: 25px;
   color: #d1d0d0;
   position: absolute;
-  top: 85%;
-  right: 20px;
   transform: translateY(-50%);
   cursor: pointer;
 }
@@ -111,27 +84,7 @@
 
 /* FICHIER ANIMATION */
 /* ANIMATION DE LEFFET SUR LES MENUES PAGE MENU */
-@keyframes entrees {
-  0% {
-    transform: translateY 500px;
-    opacity: 0;
-  }
-  100% {
-    transform: transalteY 0;
-    opacity: 1;
-  }
-}
-@keyframes plats {
-  0% {
-    transform: translateY 500px;
-    opacity: 0;
-  }
-  100% {
-    transform: transalteY 0;
-    opacity: 1;
-  }
-}
-@keyframes desserts {
+@keyframes menu {
   0% {
     transform: translateY 500px;
     opacity: 0;
@@ -144,14 +97,12 @@
 /* animation coeur a partir d'ici */
 @keyframes coeur {
   0% {
-    transform: translateY 500px;
     background: -webkit-linear-gradient(180deg, #9356DC, #FF79DA);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     opacity: 0;
   }
   100% {
-    transform: transalteY 0;
     background: -webkit-linear-gradient(180deg, #9356DC, #FF79DA);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -170,13 +121,10 @@
 }
 @keyframes load {
   0% {
-    transform: translateY 500px;
     opacity: 1;
   }
   100% {
-    transform: transalteY 0;
     opacity: 0;
-    display: none;
   }
 }
 /*animation du loader fond*/
@@ -196,8 +144,6 @@
   font-size: 25px;
   color: #d1d0d0;
   position: absolute;
-  top: 85%;
-  right: 20px;
   transform: translateY(-50%);
   cursor: pointer;
 }
@@ -257,7 +203,6 @@ footer .a-bold {
 
   .logo-coeur {
     font-size: 35px;
-    right: 25%;
   }
 
   .coeur-vide {
@@ -334,7 +279,7 @@ header a {
 }
 .titre-bloc-container h1 {
   font-family: "shrikhandregular";
-  padding-left: 20px;
+  padding-left: 10px;
 }
 
 .container {
@@ -412,15 +357,15 @@ header a {
 }
 
 .entrees {
-  animation: entrees 2.5s;
+  animation: menu 2.5s;
 }
 
 .plats {
-  animation: plats 5s;
+  animation: menu 5s;
 }
 
 .desserts {
-  animation: desserts 7.5s;
+  animation: menu 7.5s;
 }
 
 a {
@@ -447,6 +392,11 @@ a {
 .bouton .bouton-commander:hover {
   opacity: 0.9;
   box-shadow: 5px 5px 20px #797777;
+}
+
+.logo-coeur {
+  right: 15%;
+  top: 45%;
 }
 
 footer {

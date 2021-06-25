@@ -1,64 +1,84 @@
-  
 /* FICHIER ANIMATION */
 
 /* ANIMATION DE LEFFET SUR LES MENUES PAGE MENU */
 
-@keyframes menu {
-    0%{
-      transform: translateY (500px);
-        opacity: 0;
-    }
-    100%{
-      transform:transalteY (0);
-      opacity: 1;
-    }
+@keyframes entrees {
+  0% {
+    opacity: 0;
+    transform: translateY(-30px);
   }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+@keyframes plats {
+  0% {
+    opacity: 0;
+  }
+  33% {
+    opacity: 0;
+    transform: translateY(-30px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+@keyframes desserts {
+  0% {
+    opacity: 0;
+  }
+  66% {
+    opacity: 0;
+    transform: translateY(-30px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
 /* animation coeur a partir d'ici */
 @keyframes coeur {
-    0%{
-      @include color-bouton-coeur;
-        opacity: 0;
-    }
-    100%{
-      @include color-bouton-coeur;
-      opacity: 1;
-    }
+  0% {
+    @include color-bouton-coeur;
+    opacity: 0;
+  }
+  100% {
+    @include color-bouton-coeur;
+    opacity: 1;
+  }
+}
+
+/*animation du loader text*/
+@keyframes tourne {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+  /*animation du loader contour qui tourne*/
+}
+@keyframes load {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+/*animation du loader fond*/
+@keyframes fond-load {
+  0% {
+    opacity: 1;
   }
 
-  /*animation du loader text*/
-  @keyframes tourne {
-  
-    0%{
-
-      transform: rotate(0deg);
-      
-    }
-    100%{
-
-     transform: rotate(360deg);
-     
-    }
-/*animation du loader contour qui tourne*/
+  60% {
+    opacity: 1;
   }
-  @keyframes load {
-    0%{
-        opacity: 1;
-    }
-    100%{
-      opacity: 0;
-    }
-  }
-  /*animation du loader fond*/
-  @keyframes fond-load {
-    0%{
-   opacity: 1;
-    }
-
-    60%{
-      opacity: 1;
-    }
-    100%{
+  100% {
     opacity: 0;
     z-index: -1;
-    }
   }
+}

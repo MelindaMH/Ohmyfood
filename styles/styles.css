@@ -6,14 +6,40 @@
 }
 /* FICHIER ANIMATION */
 /* ANIMATION DE LEFFET SUR LES MENUES PAGE MENU */
-@keyframes menu {
+@keyframes entrees {
   0% {
-    transform: translateY 500px;
     opacity: 0;
+    transform: translateY(-30px);
   }
   100% {
-    transform: transalteY 0;
     opacity: 1;
+    transform: translateY(0);
+  }
+}
+@keyframes plats {
+  0% {
+    opacity: 0;
+  }
+  33% {
+    opacity: 0;
+    transform: translateY(-30px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+@keyframes desserts {
+  0% {
+    opacity: 0;
+  }
+  66% {
+    opacity: 0;
+    transform: translateY(-30px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
   }
 }
 /* animation coeur a partir d'ici */
@@ -84,14 +110,40 @@
 
 /* FICHIER ANIMATION */
 /* ANIMATION DE LEFFET SUR LES MENUES PAGE MENU */
-@keyframes menu {
+@keyframes entrees {
   0% {
-    transform: translateY 500px;
     opacity: 0;
+    transform: translateY(-30px);
   }
   100% {
-    transform: transalteY 0;
     opacity: 1;
+    transform: translateY(0);
+  }
+}
+@keyframes plats {
+  0% {
+    opacity: 0;
+  }
+  33% {
+    opacity: 0;
+    transform: translateY(-30px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+@keyframes desserts {
+  0% {
+    opacity: 0;
+  }
+  66% {
+    opacity: 0;
+    transform: translateY(-30px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
   }
 }
 /* animation coeur a partir d'ici */
@@ -242,14 +294,40 @@ footer .a-bold {
 }
 /* FICHIER ANIMATION */
 /* ANIMATION DE LEFFET SUR LES MENUES PAGE MENU */
-@keyframes menu {
+@keyframes entrees {
   0% {
-    transform: translateY 500px;
     opacity: 0;
+    transform: translateY(-30px);
   }
   100% {
-    transform: transalteY 0;
     opacity: 1;
+    transform: translateY(0);
+  }
+}
+@keyframes plats {
+  0% {
+    opacity: 0;
+  }
+  33% {
+    opacity: 0;
+    transform: translateY(-30px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+@keyframes desserts {
+  0% {
+    opacity: 0;
+  }
+  66% {
+    opacity: 0;
+    transform: translateY(-30px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
   }
 }
 /* animation coeur a partir d'ici */
@@ -368,7 +446,7 @@ header img {
 }
 
 .explorer {
-  background-color: #F6F6F6;
+  background-color: #f6f6f6;
   text-align: center;
   height: 285px;
 }
@@ -468,7 +546,7 @@ header img {
 }
 
 .logo-new {
-  background-color: #99E2D0;
+  background-color: #99e2d0;
   color: #278870;
   font-size: 14px;
   height: 30px;
@@ -482,7 +560,7 @@ header img {
 }
 
 .bloc-restau {
-  background-color: #F4F4F4;
+  background-color: #f4f4f4;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -499,7 +577,8 @@ header img {
   box-shadow: 8px 10px 10px #d4d3d3;
   cursor: pointer;
 }
-.bloc-restau h2, .bloc-restau p {
+.bloc-restau h2,
+.bloc-restau p {
   background-color: white;
   margin: 0px;
   padding-top: 5px;

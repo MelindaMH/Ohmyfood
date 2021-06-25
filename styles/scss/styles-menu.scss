@@ -117,7 +117,7 @@ header {
   }
   &:hover {
     .logo-anim-menu {
-      transform: scaleX(1);
+      transform: translateX(0);
       transition: transform 400ms ease-in-out;
     }
     .logo-blanc-menu {
@@ -131,15 +131,14 @@ header {
   flex-grow: 1;
 }
 .entrees {
-  animation: menu 2.5s;
+  animation: entrees 1s ease;
 }
 .plats {
-  animation: menu 5s;
+  animation: plats 1.5s ease;
 }
 .desserts {
-  animation: menu 7.5s;
+  animation: desserts 2s ease;
 }
-
 a {
   text-decoration: none;
 }
@@ -154,8 +153,7 @@ a {
     }
   }
 }
-.logo-coeur
-{
+.logo-coeur {
   right: 15%;
   top: 45%;
 }

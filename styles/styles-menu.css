@@ -6,14 +6,40 @@
 }
 /* FICHIER ANIMATION */
 /* ANIMATION DE LEFFET SUR LES MENUES PAGE MENU */
-@keyframes menu {
+@keyframes entrees {
   0% {
-    transform: translateY 500px;
     opacity: 0;
+    transform: translateY(-30px);
   }
   100% {
-    transform: transalteY 0;
     opacity: 1;
+    transform: translateY(0);
+  }
+}
+@keyframes plats {
+  0% {
+    opacity: 0;
+  }
+  33% {
+    opacity: 0;
+    transform: translateY(-30px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+@keyframes desserts {
+  0% {
+    opacity: 0;
+  }
+  66% {
+    opacity: 0;
+    transform: translateY(-30px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
   }
 }
 /* animation coeur a partir d'ici */
@@ -84,14 +110,40 @@
 
 /* FICHIER ANIMATION */
 /* ANIMATION DE LEFFET SUR LES MENUES PAGE MENU */
-@keyframes menu {
+@keyframes entrees {
   0% {
-    transform: translateY 500px;
     opacity: 0;
+    transform: translateY(-30px);
   }
   100% {
-    transform: transalteY 0;
     opacity: 1;
+    transform: translateY(0);
+  }
+}
+@keyframes plats {
+  0% {
+    opacity: 0;
+  }
+  33% {
+    opacity: 0;
+    transform: translateY(-30px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+@keyframes desserts {
+  0% {
+    opacity: 0;
+  }
+  66% {
+    opacity: 0;
+    transform: translateY(-30px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
   }
 }
 /* animation coeur a partir d'ici */
@@ -343,7 +395,7 @@ header a {
   transform: translateX(100%);
 }
 .bloc-plats:hover .logo-anim-menu {
-  transform: scaleX(1);
+  transform: translateX(0);
   transition: transform 400ms ease-in-out;
 }
 .bloc-plats:hover .logo-blanc-menu {
@@ -357,15 +409,15 @@ header a {
 }
 
 .entrees {
-  animation: menu 2.5s;
+  animation: entrees 1s ease;
 }
 
 .plats {
-  animation: menu 5s;
+  animation: plats 1.5s ease;
 }
 
 .desserts {
-  animation: menu 7.5s;
+  animation: desserts 2s ease;
 }
 
 a {

@@ -91,17 +91,23 @@
 .logo-coeur {
   font-size: 25px;
   color: #d1d0d0;
-  position: absolute;
-  transform: translateY(-50%);
   cursor: pointer;
+  border: 0;
+  padding: 0;
+  background-color: transparent;
+}
+.logo-coeur .coeur-plein,
+.logo-coeur .coeur-vide {
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
 }
 .logo-coeur .coeur-plein {
   color: #d1d0d0;
 }
 .logo-coeur .coeur-vide {
-  position: absolute;
-  margin-left: -25px;
-  margin-top: 2px;
   color: transparent;
 }
 .logo-coeur:focus .coeur-vide {
@@ -195,17 +201,23 @@
 .logo-coeur {
   font-size: 25px;
   color: #d1d0d0;
-  position: absolute;
-  transform: translateY(-50%);
   cursor: pointer;
+  border: 0;
+  padding: 0;
+  background-color: transparent;
+}
+.logo-coeur .coeur-plein,
+.logo-coeur .coeur-vide {
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
 }
 .logo-coeur .coeur-plein {
   color: #d1d0d0;
 }
 .logo-coeur .coeur-vide {
-  position: absolute;
-  margin-left: -25px;
-  margin-top: 2px;
   color: transparent;
 }
 .logo-coeur:focus .coeur-vide {
@@ -538,11 +550,13 @@ header img {
   padding-left: 20px;
   padding-right: 20px;
 }
-.liste-restau a {
+.liste-restau .bloc-restau {
   max-width: 400px;
   margin-left: auto;
   margin-right: auto;
   position: relative;
+  border-radius: 20px;
+  box-shadow: 8px 10px 10px #d4d3d3;
 }
 
 .logo-new {
@@ -567,6 +581,10 @@ header img {
   flex-direction: column;
   margin-bottom: 20px;
 }
+.bloc-restau > a {
+  display: block;
+  height: 174px;
+}
 .bloc-restau .text-bloc {
   text-decoration: none;
   background-color: white;
@@ -574,8 +592,9 @@ header img {
   font-size: 13px;
   min-width: 320px;
   border-radius: 0px 0px 20px 20px;
-  box-shadow: 8px 10px 10px #d4d3d3;
+  width: 100%;
   cursor: pointer;
+  position: relative;
 }
 .bloc-restau h2,
 .bloc-restau p {
@@ -586,6 +605,15 @@ header img {
   height: 25px;
   border-radius: 0px 0px 20px 20px;
 }
+.bloc-restau .logo-coeur {
+  top: 20px;
+  right: 20px;
+  position: absolute;
+  font-size: 25px;
+  height: 25px;
+  width: 25px;
+  z-index: 1;
+}
 
 a {
   text-decoration: none;
@@ -593,16 +621,11 @@ a {
 
 .photo-restau {
   object-fit: cover;
-  height: 174px;
+  height: 100%;
   min-width: 320px;
   border-radius: 20px 20px 0px 0px;
-  box-shadow: 8px 10px 10px #d4d3d3;
   cursor: pointer;
-}
-
-.logo-coeur {
-  top: 85%;
-  right: 15%;
+  width: 100%;
 }
 
 footer {

@@ -1,16 +1,22 @@
 .logo-coeur {
   font-size: 25px;
   color: rgb(209, 208, 208);
-  position: absolute;
-  transform: translateY(-50%);
   cursor: pointer;
+  border: 0;
+  padding: 0;
+  background-color: transparent;
+  .coeur-plein,
+  .coeur-vide {
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+  }
   .coeur-plein {
     color: rgb(209, 208, 208);
   }
   .coeur-vide {
-    position: absolute;
-    margin-left: -25px;
-    margin-top: 2px;
     color: transparent;
   }
   &:focus .coeur-vide {

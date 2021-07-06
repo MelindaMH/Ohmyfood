@@ -1,29 +1,24 @@
-footer
-{
-    background-color: #353535;
+footer {
+  background-color: #353535;
+  color: white;
+  ul {
+    list-style: none;
+  }
+  a {
     color: white;
-    ul
-    {
-        list-style: none;
-    }
-    a 
-    {
-        color: white;
-        cursor: $cursor;
-        padding-left: 3px;
-    }
-    p
-    {
-        font-family: "shrikhandregular";
-        margin-top: 0px;
-        padding-top: 20px;
-        padding-left: 40px
-    }
-    .a-bold
-    {
-        font-weight: bold;
-    }
-     }
-
-
-
+    cursor: $cursor;
+    padding-left: 3px;
+  }
+  p {
+    font-family: "shrikhandregular";
+    margin-top: 0px;
+    padding-top: 20px;
+    padding-left: 40px;
+  }
+  .a-bold {
+    font-weight: bold;
+  }
+  li {
+    padding-top: 5px;
+  }
+}

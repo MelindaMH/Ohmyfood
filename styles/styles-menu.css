@@ -245,6 +245,9 @@ footer p {
 footer .a-bold {
   font-weight: bold;
 }
+footer li {
+  padding-top: 5px;
+}
 
 @media screen and (min-width: 1024px) {
   .logo-ohmyfood {
@@ -306,7 +309,7 @@ html {
 }
 
 body {
-  font-family: "Raleway", sans-serif;
+  font-family: "Roboto", sans-serif;
   margin: 0;
   padding: 0;
   position: relative;
@@ -497,6 +500,9 @@ footer p {
 }
 footer .a-bold {
   font-weight: bold;
+}
+footer li {
+  padding-top: 5px;
 }
 
 /*# sourceMappingURL=styles-menu.css.map */

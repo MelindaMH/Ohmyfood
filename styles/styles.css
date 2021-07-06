@@ -245,6 +245,9 @@ footer p {
 footer .a-bold {
   font-weight: bold;
 }
+footer li {
+  padding-top: 5px;
+}
 
 @media screen and (min-width: 1024px) {
   .bloc-fonctionnement {
@@ -437,7 +440,7 @@ html {
 }
 
 body {
-  font-family: "Raleway", sans-serif;
+  font-family: "Roboto", sans-serif;
   margin: 0;
   padding: 0;
   position: relative;
@@ -520,7 +523,11 @@ header img {
   box-shadow: 5px 5px 10px #d4d3d3;
   cursor: pointer;
 }
-.bloc-fonctionnement .numero-fonctionnement {
+.bloc-fonctionnement:hover {
+  background-color: #e6e4e4;
+}
+
+.numero-fonctionnement {
   border-radius: 20px;
   background-color: #9356DC;
   width: 40px;
@@ -648,6 +655,9 @@ footer p {
 }
 footer .a-bold {
   font-weight: bold;
+}
+footer li {
+  padding-top: 5px;
 }
 
 /*# sourceMappingURL=styles.css.map */

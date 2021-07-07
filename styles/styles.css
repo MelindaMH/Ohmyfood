@@ -552,9 +552,6 @@ header img {
   font-size: 18px;
   color: gray;
 }
-.logo-fonctionnement:hover .logo-fonctionnement {
-  color: red;
-}
 
 .restaurants {
   background-color: #F4F4F4;

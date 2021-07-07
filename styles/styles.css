@@ -529,7 +529,7 @@ header img {
   cursor: pointer;
 }
 .bloc-fonctionnement:hover {
-  background-color: #f0eeee;
+  background-color: #f5edff;
 }
 .bloc-fonctionnement:hover .logo-fonctionnement {
   color: #9356DC;

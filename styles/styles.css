@@ -250,6 +250,11 @@ footer li {
 }
 
 @media screen and (min-width: 1024px) {
+  footer ul {
+    display: inline;
+  }
+}
+@media screen and (min-width: 1024px) {
   .bloc-fonctionnement {
     background: red;
     width: 380px;
@@ -524,7 +529,10 @@ header img {
   cursor: pointer;
 }
 .bloc-fonctionnement:hover {
-  background-color: #e6e4e4;
+  background-color: #f0eeee;
+}
+.bloc-fonctionnement:hover .logo-fonctionnement {
+  color: #9356DC;
 }
 
 .numero-fonctionnement {
@@ -543,6 +551,9 @@ header img {
 .logo-fonctionnement {
   font-size: 18px;
   color: gray;
+}
+.logo-fonctionnement:hover .logo-fonctionnement {
+  color: red;
 }
 
 .restaurants {
@@ -658,6 +669,12 @@ footer .a-bold {
 }
 footer li {
   padding-top: 5px;
+}
+
+@media screen and (min-width: 1024px) {
+  footer ul {
+    display: inline;
+  }
 }
 
 /*# sourceMappingURL=styles.css.map */

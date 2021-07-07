@@ -86,7 +86,10 @@ header {
   box-shadow: 5px 5px 10px rgb(212, 211, 211);
   cursor: $cursor;
   &:hover {
-    background-color: #e6e4e4;
+    background-color: #f0eeee;
+  }
+  &:hover .logo-fonctionnement {
+    color: $color-prim;
   }
 }
 
@@ -104,6 +107,9 @@ header {
 .logo-fonctionnement {
   font-size: 18px;
   color: gray;
+  &:hover .logo-fonctionnement {
+    color: red;
+  }
 }
 
 .restaurants {

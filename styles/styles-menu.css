@@ -250,6 +250,11 @@ footer li {
 }
 
 @media screen and (min-width: 1024px) {
+  footer ul {
+    display: inline;
+  }
+}
+@media screen and (min-width: 1024px) {
   .logo-ohmyfood {
     width: 250px;
   }
@@ -503,6 +508,12 @@ footer .a-bold {
 }
 footer li {
   padding-top: 5px;
+}
+
+@media screen and (min-width: 1024px) {
+  footer ul {
+    display: inline;
+  }
 }
 
 /*# sourceMappingURL=styles-menu.css.map */
